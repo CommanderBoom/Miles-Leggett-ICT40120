@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edification</title>
+    <meta content="Description of my webpage for search engines." name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Facebook Open Graph tags -->
+    <meta content="My Webpage Title" property="og:title">
+    <meta content="Description of my webpage for social media." property="og:description">
+    <meta content="https://example.com/myimage.jpg" property="og:image">
+
+    <style>
+
+        body, html {
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        body {
+            background-image: url("images/bg/moroccan-flower.png");
+            text-align: center;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .gallery-button {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 50px;
+        }
+
+        .gallery-button:hover {
+            background-color: #5a8aa1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            margin: 0 auto;
+        }
+
+        /*Link colour changing*/
+
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+            text-decoration: underline;
+
+        }
+
+
+        /*Table, colour oddeven*/
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: rgba(0, 140, 255, 0.6);
+        }
+
+        tr:nth-child(even) {
+            background-color: #c9c9c9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+
+        .gallery-button {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 50px;
+        }
+
+        .gallery-button:hover {
+            background-color: #ff0080;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <section>
+        <h1 style="text-align: center"> ICT40120 Certificate IV Web Dev</h1>
+
+        <!--				<div style="display: flex; justify-content: center;">-->
+
+        <!--					<a href="lt4-gallery.html" style="margin: 0 auto">-->
+        <!--							<button style="text-align: center ; font-size: 2em; padding: 1em; background-image: radial-gradient(circle,#CD5C5C,#ffbebe); color: #fff;">-->
+        <!--							Go to Gallery-->
+        <!--							</button>-->
+        <!--					</a>-->
+        <!--				</div>-->
+        <br>
+        <a class="gallery-button" href="lt4-gallery.html">LT4 Gallery</a>
+        <a class="gallery-button" href="lt5-float.html">LT5 Floats </a>
+        <br>
+        <hr>
+        <br>
+        <!--Centre aligning button surprisingly hard, due to no fixed width, I think. Used Flexbox-->
+        <!--			spoke to soon, still button problems, cannot nest inside <a>. starting from scratch.-->
+
+
+        <figure>
+            <img alt="My Cat, Dermot" src="images/dermy.webp" width=600>
+            <br>
+            <figcaption>"He was only a cat, but he was human enough to be a great comfort in hours of loneliness and
+                pain."
+            </figcaption>
+        </figure>
+        <br>
+        <hr>
+        <br>
+        <h2>A list of lists!</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <br>
+        <hr>
+        <br>
+
+
+        <h2>A table!</h2>
+        <br>
+
+
+        <table style="background-color:#6e9bbb">
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+                <td>Row 1, Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
+                <td>Row 2, Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Column 1</td>
+                <td>Row 3, Column 2</td>
+                <td>Row 3, Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 4, Column 1</td>
+                <td>Row 4, Column 2</td>
+                <td>Row 4, Column 3</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <figure>
+            <img alt="Me coding" src="images/scaler-create-impact.gif" width=600>
+            <br>
+            <figcaption>My style of coding.</figcaption>
+        </figure>
+    </section>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#top">Return to Top</a></li>
+        </ul>
+    </nav>
+</footer>
+<br>
+<a class="gallery-button" href="index.html">Return Home</a>
+<br>
+</body>
+</html>

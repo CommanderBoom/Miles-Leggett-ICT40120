@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <meta name="description" content="Description of my webpage for search engines.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Facebook Open Graph tags -->
+    <meta property="og:title" content="My Gallery">
+    <meta property="og:description" content="Gallery of my Cats. Just about he only photo's I had to hand.">
+    <meta property="og:image" content="https://example.com/myimage.jpg">
+
+    <style>
+        body {
+            background-image: url("images/bg/moroccan-flower.png");
+        }
+
+        hr {
+            width: 95%;
+        }
+
+        .gallery-button {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 50px;
+
+        }
+
+        .gallery-button:hover {
+            background-color: #ff0080;
+        }
+
+        .image-container {
+            float: left;
+            margin-right: 20px;
+        }
+
+
+        .singlecard {
+            float: left;
+            width: 200px;
+            height: 300px;
+            margin: 0 20px 20px 0;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+
+        .card {
+            float: left;
+            width: calc(30% - 20px);
+            margin: 0 10px 20px 0;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Floated Images</h1>
+
+<!--  Some problems here, I can't get them to align vertically, they're all floating into each other-->
+
+<div class="image-container">
+    <img src="images/dermy.webp" width=150 alt="Image">
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor mauris vel leo placerat, a bibendum massa
+sagittis. Integer ultricies erat nec est elementum, at eleifend nisl facilisis. In vitae justo quis enim efficitur
+euismod in vel odio. Quisque quis justo aliquam, consectetur eros sed, sodales purus.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor mauris vel leo placerat, a bibendum massa
+sagittis. Integer ultricies erat nec est elementum, at eleifend nisl facilisis. In vitae justo quis enim efficitur
+euismod in vel odio. Quisque quis justo aliquam, consectetur eros sed, sodales purus.
+</p>
+<hr>
+<div class="image-container">
+    <img src="images/07032020-dermot-ruby-ml-1.jpg" width=150 alt="Image">
+</div>
+Sed eleifend, nunc in imperdiet dictum, velit velit auctor dui, eget tempor nulla sapien eget ex. Sed nec lorem mi.
+Proin vel eros convallis, fringilla turpis vel, gravida nisl. Fusce suscipit interdum sapien, at imperdiet nibh bibendum
+eu. Maecenas sollicitudin malesuada turpis, ut convallis risus vestibulum non.
+<hr>
+<div class="image-container">
+    <img src="images/07112021-ruby-ml-4.jpg" width=150 alt="Image">
+</div>
+Curabitur eu est at nibh malesuada auctor in ut odio. Integer sagittis mauris eget mauris venenatis, non consectetur
+lorem elementum. Phasellus tincidunt, sapien sed semper pretium, nisi erat tempor massa, eu convallis eros leo vel dui.
+Etiam eget elit felis.
+<hr>
+
+<br>
+<hr>
+<br>
+
+
+<h1>Floated Card</h1>
+<p>
+<div class="singlecard">
+    <h2>Card Title</h2>
+    <img src="images/16022022-ruby-ml-7.jpg" width=195 alt="Image">
+
+</div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor mauris vel leo placerat, a bibendum massa
+sagittis. Integer ultricies erat nec est elementum, at eleifend nisl facilisis. In vitae justo quis enim efficitur
+euismod in vel odio. Quisque quis justo aliquam, consectetur eros sed, sodales purus.
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<!--  More problems, need to learn how to separate elements-->
+
+<h1>Three Cards</h1>
+<br>
+<hr>
+<br>
+<div class="card">
+    <h2>Card 1</h2>
+    <p>Some text goes here...</p>
+    <a href="#">Read More</a>
+</div>
+<div class="card">
+    <h2>Card 2</h2>
+    <p>Some text goes here...</p>
+    <a href="#">Read More</a>
+</div>
+<div class="card">
+    <h2>Card 3</h2>
+    <p>Some text goes here...</p>
+    <a href="#">Read More</a>
+</div>
+<div class="clear"></div>
+
+<a href="index.html" class="gallery-button">Return Home</a>
+<br>
+</body>
+</html>

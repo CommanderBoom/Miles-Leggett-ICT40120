@@ -1,0 +1,154 @@
+/* style for the BBlogo v2*/
+
+/*.background {*/
+/*    position: relative;*/
+/*}*/
+
+/* Tint the background image */
+/*.background img {*/
+/*    filter: grayscale(80%) blur(1px);*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* Center the logo *!*/
+/*.logo-container {*/
+/*    !*position: relative;*!*/
+/*    background-image: url("/images/blood-bowl-bg.webp");*/
+/*    position: absolute;*/
+/*    !*top: 50%;*!*/
+/*    !*left: 50%;*!*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+/*.logo-container img {*/
+/*    max-width: 100%;*/
+
+/*}*/
+
+/* Style for LT7-1 bblogo v3 */
+.container {
+    background-image: url('/images/lt7/blood-bowl-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-color: #c9c9c9;
+    background-blend-mode: overlay;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bblogo img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* style for LT7-3 Columns */
+.columns-container {
+    display: flex;
+    background: #d5dee8;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid #ccc;
+}
+
+.column-image {
+    float: left;
+    margin-right: 1vw;
+    border-radius: 2px;
+    border: 5px solid #ccc;
+}
+
+.column-image img {
+    display: block;
+}
+
+/* Style for LT7-4 Cards */
+
+.cards {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+    border: 2px solid #ccc;
+    background-color: #fefefe;
+}
+
+.card {;
+    flex-basis: 26.5vw;
+    padding: 0px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.card-header {
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-header h2 {
+    background: rgba(238, 238, 238, 0.93);
+    margin: 0;
+    padding: 10px
+}
+
+.card-body {
+    background-image: radial-gradient(#ffffff, #f5f5f5, #cecece);
+    padding: 10px;
+}
+
+.subscription {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+
+.cost {
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fefefe;
+    padding: 1.3vw;
+    border-radius: 5px;
+    border: #406da4 solid 0px;
+    background: #017afe;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fefefe;
+    padding: 1.3vw;
+    border-radius: 5px;
+    border: #426e9a solid 0px;
+    background: #017afe;
+}
+
+button a:visited {
+    color: rgb(248, 221, 151);
+}
+
+.free-button {
+    background: #fefefe;
+    border: #368ae1 solid 1px;
+    color: #368ae1;
+
+}
+
+
+

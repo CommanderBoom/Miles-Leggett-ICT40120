@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT40120 Certificate IV Web Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="layouts/layout.css">
+    <link rel="stylesheet" href="layouts/lt7-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Open+Sans:wght@300&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+<header class="header">
+    <h1 class="logo">ICT40120 Web Dev</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<h1>LT7: Layout with Flexbox</h1>
+<h2>LT7-1: Centering a logo</h2>
+
+<!-- bblogo v1 -->
+
+<!--&lt;!&ndash;<div class="background">&ndash;&gt;-->
+<!--&lt;!&ndash;  <img src="images/blood-bowl-bg.webp" alt="Background Image" />&ndash;&gt;-->
+<!--  <div class="logo-container">-->
+<!--      <img src="images/bblogo-2022.svg" alt="Blood bowl 2022 league coin">-->
+<!--&lt;!&ndash;      <object data="images/bblogo-2022.svg" type="image/svg+xml">&ndash;&gt;-->
+
+<!--&lt;!&ndash;</object>&ndash;&gt;-->
+
+<!--  </div>-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<div class="image-container">&ndash;&gt;-->
+<!--&lt;!&ndash;    <img src="images/blood-bowl-bg.webp" alt="Background Image">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="svg-container">&ndash;&gt;-->
+<!--&lt;!&ndash;        <img src="images/bblogo-2022.svg" alt="Blood bowl 2022 league coin">&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!-- bblogo v2-->
+<!--        <img src="images/lt7/bblogo-2022.svg" alt="Logo">-->
+
+<!-- bblogo v3-->
+
+<!--<div class="container">-->
+<!--    <div class="bblogo">-->
+<!--        <object data="images/lt7/bblogo-2022.svg" type="image/svg+xml"></object>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="container">
+    <div class="bblogo">
+        <img
+                src="images/lt7/bblogo-2022.png"
+                alt="2022 Blood Bowl league coin"
+                srcset="images/lt7/bblogo-2022.svg"/>
+    </div>
+</div>
+
+<h2>LT7-3: Responsive layout with equal-height columns using Flexbox</h2>
+
+<div class="columns-container">
+    <div class="column"><h3> Logo v1 </h3>
+        <div class="column-image">
+            <img src="images/lt7/v1.webp" width=100 alt="A very old computer">
+        </div>
+        <p>I created The logo above for a commemorative coin for the 2022 season of my Bloodbowl league. It's
+            formatted as an svg, and thus had to be embedded, as the familiar 'img' tag was causing issues.</p>
+    </div>
+    <div class="column"><h3> Logo v2 </h3>
+        <div class="column-image">
+            <img src="images/lt7/v2.webp" width=100 alt="An old computer">
+        </div>
+        <p>Turns out the 'embed' tag was also causing issues! apart from being largely depreciated, it was also proving
+            non-reactive to window size. 'object' tag was the answer, though it took an embarrassingly long time for me
+            to work it out.</p>
+    </div>
+    <div class="column">
+        <h3> Logo v3 </h3>
+        <div class="column-image">
+            <img src="images/lt7/v3.webp" width=100 alt="A modern computer">
+        </div>
+        <p> So, turns out the 'object' tag is not good semantic HTML, so I started from scratch yet again. This time I
+            used a single container, and used the 'img' tag, and I formatted the background as a 'background-image', and
+            used 'background-blend-mode' to fade the backdrop, and allow the logo to draw focus.</p>
+        <p> I exported the logo as an .svg using Photoshop, and ran into myriad problems as it seems that my Photoshop
+            exports .svg's with a very slightly wrong media type ('data:img/png', instead of 'data:image/png'), which
+            was causing problems with the image displaying in chrome, but worked fine in my IDE.</p>
+    </div>
+</div>
+<p>The .svg problem vexed me for hours, and was only solved with the aid of my software developing friend <a
+        href="https://au.linkedin.com/in/richard-johnson-5a634297" class="link">Richard Johnson</a>, who discovered the
+    solution <a href="https://css-tricks.com/forums/topic/svg-css-background-image-not-showing-in-chrome/#post-244623"
+                class="link">Here</a></p>
+
+<p> Images for columns credit of
+    <a href="https://www.vexels.com/vectors/preview/197725/history-of-computers-timeline-design?ref=vexelsck&tap_s=576618-2da5a0"
+       class="link">'History of Computers' by Vexels.</a></p>
+
+<h2>LT7-4 Using Flexbox to deploy "cards"</h2>
+
+<section class="cards">
+    <div class="card">
+        <div class="card-header">
+            <h2>Free</h2>
+        </div>
+        <div class="card-body">
+            <div class="subscription">
+                <span class="cost"> $0 </span> / mo
+            </div>
+            <p>10 users included <br> 2 GB of storage <br> Email support <br> Help center access</p>
+            <button class="free-button">
+                <a href="index.html">Sign up for free</a>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>Pro</h2>
+        </div>
+        <div class="card-body">
+
+            <div class="subscription">
+                <span class="cost"> $15 </span> / mo
+            </div>
+            <p>20 users included <br> 10 GB of storage <br> Priority email support <br> Help center access </p>
+            <button>
+                <a href="index.html">Get started</a>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>Enterprise</h2>
+        </div>
+        <div class="card-body">
+            <div class="subscription">
+                <span class="cost"> $29 </span> / mo
+            </div>
+            <p>30 users included <br> 15 GB of storage <br> Phone and email support <br> Help center access </p>
+            <button>
+                <a href="index.html">Contact us</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <p>&copy;2023 Miles Leggett.</p>
+</footer>
+</body>
+</html>

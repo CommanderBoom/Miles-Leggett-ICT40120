@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LT4: Digital Images, cropping, PNG transparency</title>
+    <meta name="description" content="Description of my webpage for search engines.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Facebook Open Graph tags -->
+    <meta property="og:title" content="My Gallery">
+    <meta property="og:description" content="Gallery of my Cats. Just about he only photo's I had to hand.">
+    <meta property="og:image" content="https://example.com/myimage.jpg">
+
+    <style>
+        body {
+            background-image: url("images/bg/moroccan-flower.png");
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        div.gallery {
+            background-image: url("images/bg/moroccan-flower-dark.webp");
+            background-repeat: repeat;
+        }
+
+        div.gallery {
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+
+        body {
+            text-align: center;
+        }
+
+        .gallery-button {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 50px;
+        }
+
+        .gallery-button:hover {
+            background-color: #ff0080;
+        }
+    </style>
+</head>
+<body>
+
+<h2>LT4: Digital Images, cropping, PNG transparency</h2>
+<h3> Responsive Image Gallery</h3>
+
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/07032020-dermot-ruby-ml-1.jpg">
+            <img src="images/07032020-dermot-ruby-ml-1.jpg" alt="Dermot and Ruby dozing" width="600" height="400">
+        </a>
+        <div class="desc">Dermot and Ruby dozing</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/07112021-ruby-ml-4.jpg">
+            <img src="images/07112021-ruby-ml-4.jpg" alt="Ruby taking full advantage of my ambitious overclock"
+                 width="600" height="400">
+        </a>
+        <div class="desc">Ruby enjoying my overclock</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/13062020-ruby-ml-2.jpg">
+            <img src="images/13062020-ruby-ml-2.jpg" alt="Ruby on alert" width="600" height="400">
+        </a>
+        <div class="desc">Ruby on alert</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/17042020-dermy-ruby-ml-3.jpg">
+            <img src="images/17042020-dermy-ruby-ml-3.jpg" alt="Dermot and Ruby dozing" width="600" height="400">
+        </a>
+        <div class="desc">Dermot and Ruby, still dozing</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/19012022-Dermot-Ruby-ML-6.jpg.jpg">
+            <img src="images/19012022-dermot-ruby-ml-6.jpg" alt="Dermot and Ruby, grooming" width="600" height="400">
+        </a>
+        <div class="desc">Dermot and Ruby, grooming</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/19012022-ruby-ml-5.jpg">
+            <img src="images/19012022-ruby-ml-5.jpg" alt="Dermot and Ruby, grooming" width="600" height="400">
+        </a>
+        <div class="desc">Really not a wise OC...</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/30072022-bertie-ml-8.jpg">
+            <img src="images/30072022-bertie-ml-8.jpg" alt="Bertie prowling" width="600" height="400">
+        </a>
+        <div class="desc">Bertie prowling</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/16022022-ruby-ml-7.jpg">
+            <img src="images/16022022-ruby-ml-7.jpg" alt="Ruby overseeing my work" width="600" height="400">
+        </a>
+        <div class="desc">Ruby overseeing my work</div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+    <p>Media queries are usd to re-arrange the images on different screen sizes: for screens larger than 700px wide, it
+        will show four images side by side, for screens smaller than 700px, it will show two images side by side. For
+        screens smaller than 500px, the images will stack vertically (100%).</p>
+
+</div>
+
+<a href="images/krimson-corsairs-LOGO-v1.webp" target="_blank">
+    <img src="images/krimson-corsairs-LOGO-v1.webp" width="800" alt="Bloodbowl team logo.">
+</a>
+<br>
+<h3>A logo I made for my
+    <a href="https://www.games-workshop.com/en-US/searchResults?N=1339748208+1822523585" class="link">BLOODBOWL</a>
+    team, the Krimson Korsairs. </h3>
+<br>
+<h3>I used '.webp' for the file format, taking the file from 728 KB to 144 KB</h3>
+<br>
+<!--<a href="index.html">-->
+<!--  					<button style="font-size: 2em; padding: 1em; background-image: radial-gradient(circle,#CD5C5C,#ffbebe); color: #fff;">-->
+<!--    				Return to Index-->
+<!--  					</button>-->
+<!--				</a>-->
+<!--old return button. Worked, but threw an error to replaced.-->
+
+<br>
+<a href="index.html" class="gallery-button">Return Home</a>
+<br>
+
+</body>
+</html>
+
+
